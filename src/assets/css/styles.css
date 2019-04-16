@@ -1,0 +1,285 @@
+/*Font-Family*/
+@font-face{
+    font-family: "yanone";
+    src: url('../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Regular.ttf')
+}
+@font-face{
+    font-family: "finger";
+    src: url('../fonts/Finger_Paint/FingerPaint-Regular.ttf')
+}
+/*Generales*/
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    background: gainsboro;
+    font-family: 'yanone';
+    font-size: 20px;
+    background-attachment: fixed
+}
+.clearfix{
+    float: none;
+    clear: both
+}
+
+header{
+    width: 100%;
+    height: 90px;;
+    background: rgba(53, 103, 164, 0.7);
+    display: block;
+    position: fixed;
+    text-transform: uppercase
+}
+header ul{
+    display:block;
+    width: 750px;
+    height: inherit;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: -6px
+}
+header ul li{
+    display:inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 90px
+}
+header a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms
+}
+header a:hover, .actived{
+    background: rgba(0,0,0,0.8);
+}
+
+/*Logo*/
+#logo{
+    font-family: 'finger';
+    font-size: 30px;
+    transition: color 500ms, transform 500ms
+}
+
+#logo:hover{
+    background: transparent !important;
+    color: black;
+    transform: scale(1.5)
+}
+
+/*Contenedor principal*/
+#contenido{
+    min-height: 500px;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    background: rgba(255,255,255, 0.7);
+    padding-top: 120px;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7
+
+}
+
+/*Pie de pagina*/
+footer{
+    width: 75%;
+    margin: 0px auto;
+    padding-top:  15px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+/* Sobre mi*/
+
+#title{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 20px
+}
+#title h1{
+    font-family: "finger";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify
+}
+
+/*Seccion con formulario*/
+.container{
+    padding: 50px;
+    padding-top: 10px
+}
+.container h2{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px
+}
+
+form{
+    width:60%
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 50%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"],
+.button-edit,
+.button-delete{
+    display:block;
+    font-size:17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background: rgba(53, 103, 164, 1);
+    border: 1px solid rgba(13, 67, 133, 1);
+    cursor: pointer;
+}
+.button-edit,
+.button-delete{
+    float: left;
+    width: 20%;
+    margin-right: 10px;
+    text-decoration: none;
+    border: none
+}
+.button-edit{
+    background: orange
+}
+.button-delete{
+    background: red
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+    background: rgba(53, 103, 164, 0.8);
+    border: 1px solid rgba(13, 67, 133, 1);  
+}
+
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/*Clase form error*/
+.form_error{
+    font-size: 13px;
+    padding: 3px;
+    background: red;
+    color:white;
+    margin-left: 5px
+}
+
+.message{
+    /*width: 45%;*/
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #eee;
+    font-size: 15px
+}
+.success{
+    background: green;
+    color: white
+}
+.success a{
+    color: white
+}
+.failed{
+    background: red;
+    color: white
+}
+
+
+/*Listado de proyectos*/
+.project{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25%;
+    text-align: center
+}
+.project img{
+    width: 120px;
+}
+.project .image{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.project a{
+    text-decoration: none;
+    color: black
+}
+.project h4{
+    margin-top: 5px
+}
+.project p{
+    margin-bottom: 20px;
+}
+
+
+.detail img{
+    width: 250px;
+    float: left
+}
+.detail > .data{
+    float:left;
+    margin-left: 20px
+}
+.clear{
+    clear: both;
+}
+
+.detail a{
+    padding-right: 12px
+}
+.eliminar{
+    margin-top: 15px
+}
+

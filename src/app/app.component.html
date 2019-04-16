@@ -1,0 +1,33 @@
+
+
+<header> 
+  <ul>
+    <li>
+      <a  [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">About me</a>
+    </li>
+    <li>
+      <a   [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Projects</a>
+    </li>
+
+    <li><a href="#" id="logo">JR</a></li>
+
+    <li>
+      <a   [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Create</a>
+    </li>
+    <li>
+      <a   [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contact</a>
+    </li>
+  </ul>
+</header>
+
+<section id="contenido">
+  <router-outlet></router-outlet>
+  <div class="clear"></div>
+</section>
+
+<footer>
+  Master de Javascript Jose Rodriguez &copy;
+</footer>
+
+
+
